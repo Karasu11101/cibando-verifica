@@ -1,66 +1,283 @@
 
 @import '../../styles/colori.scss';
 
-.container-cards {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .card {
-    width: 23%;
-    margin-left: 1.5%;
-    float: left;
+  .container-cards {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .card-title {
-      font-weight: bold;
-      font-size: 16px;
-      color: $primary-color-1;
+    .cover {
+      background-color: rgba(128, 128, 128, 0.568);
     }
 
-    .card-image {
-      height: 200px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+    .card {
+      width: 23%;
+      margin-left: 1.5%;
+      float: left;
+      margin-bottom: 20px;
+
+      .card-title {
+        font-weight: bold;
+        font-size: 16px;
+        color: $primary-color-1;
+      }
+
+      .card-image {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .card-text {
+        font-size: 10px;
+        text-align: justify;
+      }
+
+      a.btn.btn-primary {
+        background-color: $primary-color-1;
+        border: none;
+      }
     }
-    .card-text {
-      font-size: 10px;
-      text-align: justify;
+    .difficolta {
+      width: 120px;
+      margin-top: 13px;
+      margin-bottom: 10px;
+      margin-left: -3px;
+    }
+    .difficolta-title {
+      margin-top: 0px;
+      margin-bottom: -12px;
+      padding-bottom: 0px;
+      font-weight: 600;
+      font-size: 14px;
     }
 
-    a.btn.btn-primary {
-      background-color: $primary-color-1;
-      border: none;
+    .visualizza {
+      text-align: center;
+      margin-bottom: -10px;
+      margin-top: 20px;
+
+      a.btn.btn-primary {
+        width: 100%;
     }
-  }
-  .difficolta {
-    width: 120px;
-    margin-top: 13px;
-    margin-bottom: 10px;
-    margin-left: -3px;
-  }
-  .difficolta-title {
-    margin-top: 0px;
-    margin-bottom: -12px;
-    padding-bottom: 0px;
-    font-weight: 600;
-    font-size: 14px;
+    }
+
+    #icons-admin {
+      display: flex!important;
+      margin-top: 20px;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: -10px;
+
+      .admin-icon {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding: 20px;
+
+
+        .btn-admin {
+          border-radius: 50%;
+          border: 2px solid $primary-color-1;
+          height: 40px;
+          width: 40px;
+          background-color: $primary-color-2!important;
+
+          .pi:default {
+            color: $primary-color-1;
+          }
+        }
+
+        .btn-admin:hover {
+          background-color: $primary-color-1!important;
+          color: $primary-color-2;
+          .pi {
+            color: white;
+          }
+        }
+
+      }
+    }
+
   }
 
-  .visualizza {
-    text-align: center;
-    margin-bottom: -10px;
-    margin-top: 20px;
-
-    a.btn.btn-primary {
-      width: 100%;
+.modal-header {
+  h4 {
+    text-align: left;
+    color: white!important;
   }
-  }
-
 }
+
+.modal-body {
+   #sub-title {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+}
+
+#delete-img {
+  border: 3px solid $primary-color-1;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.modal-footer {
+  background-color: white;
+  .btn-cancella {
+    background-color: $primary-color-1;
+    color: white;
+  }
+}
+
+.modal-modify-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-modal-header-padding);
+  border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+  flex-direction: row-reverse;
+  background-color: $primary-color-1;
+
+  h4 {
+    color: white;
+  }
+}
+
+#button-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.btn-modify {
+  background-color: $primary-color-1;
+  color: $primary-color-2;
+}
+
+#modify-img-div {
+  display: flex;
+  justify-content: center;
+}
+
+#modify-img {
+  border: 3px solid $primary-color-1;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+label {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+// .ricetta-non-visibile {
+//   .container-cards {
+//     margin-bottom: 20px;
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+
+//     .card {
+//       width: 23%;
+//       margin-left: 1.5%;
+//       float: left;
+//       margin-bottom: 20px;
+
+//       .card-title {
+//         font-weight: bold;
+//         font-size: 16px;
+//         color: $primary-color-1;
+//       }
+
+//       .card-image {
+//         height: 200px;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//       }
+//       .card-text {
+//         font-size: 10px;
+//         text-align: justify;
+//       }
+
+//       a.btn.btn-primary {
+//         background-color: $primary-color-1;
+//         border: none;
+//       }
+//     }
+//     .difficolta {
+//       width: 120px;
+//       margin-top: 13px;
+//       margin-bottom: 10px;
+//       margin-left: -3px;
+//     }
+//     .difficolta-title {
+//       margin-top: 0px;
+//       margin-bottom: -12px;
+//       padding-bottom: 0px;
+//       font-weight: 600;
+//       font-size: 14px;
+//     }
+
+//     .visualizza {
+//       text-align: center;
+//       margin-bottom: -10px;
+//       margin-top: 20px;
+
+//       a.btn.btn-primary {
+//         width: 100%;
+//     }
+//     }
+
+//     #icons-admin {
+//       display: flex!important;
+//       margin-top: 20px;
+//       flex-direction: row;
+//       justify-content: center;
+//       margin-bottom: -10px;
+
+//       .admin-icon {
+//         display: flex;
+//         flex-direction: column;
+//         flex-wrap: nowrap;
+//         justify-content: center;
+//         align-items: center;
+//         margin-top: 30px;
+//         padding: 20px;
+
+//         .btn-admin {
+//           border-radius: 50%;
+//           height: 40px;
+//           width: 40px;
+//           background-color: $primary-color-2!important;
+//         }
+
+//         .pi {
+//           color: $primary-color-1;
+//         }
+//       }
+//     }
+
+//   }
+// }
 
 .container-pagination {
   width: 100%;

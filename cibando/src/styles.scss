@@ -136,6 +136,23 @@ ngb-pagination {
   max-height: 200px!important;
 }
 
+.modal-footer {
+  background-color: white!important;
+  .btn-cancella {
+    background-color: $primary-color-1;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.modal-header .btn-close {
+  color: white!important;
+}
+
+.btn-modify {
+  color: white!important;
+}
+
 // .container-cards {
 //   margin-bottom: 20px;
 //   display: flex;

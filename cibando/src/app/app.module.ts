@@ -29,6 +29,7 @@ import { EsempioComponent } from './components/esempio/esempio.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { VideoComponent } from './components/video/video.component';
+import { HoverDirective } from './directives/hover.directive';
 
 
 
@@ -46,6 +47,7 @@ import { VideoComponent } from './components/video/video.component';
     LoginComponent,
     ProfileComponent,
     VideoComponent,
+    HoverDirective,
   ],
   imports: [
     BrowserModule,
